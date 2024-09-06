@@ -1,0 +1,2 @@
+npx create-next-app@latest ./
+npm i bcrypt mongodb mongoose next-auth
