@@ -1,2 +1,7 @@
 npx create-next-app@latest ./
 npm i bcrypt mongodb mongoose next-auth
+
+
+https://www.cryptool.org/en/cto/openssl/
+use above url and type in terminal: openssl rand -base64 32 
+paste the string generated in NEXTAUTH_SECRET in env file
