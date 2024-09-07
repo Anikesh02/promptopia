@@ -2,7 +2,7 @@
 
 import Form from '@components/Form';
 import { useRouter, useSearchParams } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Suspense } from 'react';
 
 
 const EditPrompt = () => {
@@ -63,4 +63,10 @@ const EditPrompt = () => {
   )
 }
 
-export default EditPrompt
+const EditPromptPage = () => (
+    <Suspense fallback={<div>Loading...</div>}>
+        <EditPrompt />
+    </Suspense>
+);
+
+export default EditPromptPage
